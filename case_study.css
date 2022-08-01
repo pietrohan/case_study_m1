@@ -44,6 +44,7 @@ p {
     margin: auto;
     padding-left: 25px;
     padding-right: 25px;
+    padding-bottom: 20px;
 }
 .row {
     display: flex;

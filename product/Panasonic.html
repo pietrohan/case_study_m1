@@ -5,6 +5,7 @@
     <title>Title</title>
     <link rel="stylesheet" href="product.css">
     <link rel="stylesheet" href="../case_study.css">
+    <script src="../case_study.js"></script>
 </head>
 <body>
 <div class="header">
@@ -19,7 +20,8 @@
                        <a href="" class="product-thumb">
                            <img src = "../product img/Panasonic/3canh500l.jpg" alt = "không hiển thị hình ảnh" >
                        </a>
-                       <a href="" class="buy-now">Mua ngay</a>
+                       <span href="" class="buy-now"><button type="button" onclick="addToCart(this)" > Mua ngay  </button> </span>
+                       <div class="product-price hide"><span class="amount"> 45000000 </span> VND </div>
                    </div>
                    <div class="product-infor">
                        <a href="" class="product-cat">  Mã sản phẩm: 111 </a>
@@ -34,7 +36,8 @@
                        <a href="" class="product-thumb">
                            <img src = "../product img/Panasonic/4canh_628l.jpg" alt = "không hiển thị hình ảnh" >
                        </a>
-                       <a href="" class="buy-now">Mua ngay</a>
+                       <span href="" class="buy-now"><button type="button" onclick="addToCart(this)" > Mua ngay  </button> </span>
+                       <div class="product-price hide"><span class="amount"> 45000000 </span> VND </div>
                    </div>
                    <div class="product-infor">
                        <a href="" class="product-cat">  Mã sản phẩm: 112 </a>
@@ -49,7 +52,8 @@
                        <a href="" class="product-thumb">
                            <img src = "../product img/Panasonic/491l.jpg" alt = "không hiển thị hình ảnh" >
                        </a>
-                       <a href="" class="buy-now">Mua ngay</a>
+                       <span href="" class="buy-now"><button type="button" onclick="addToCart(this)" > Mua ngay  </button> </span>
+                       <div class="product-price hide"><span class="amount"> 45000000 </span> VND </div>
                    </div>
                    <div class="product-infor">
                        <a href="" class="product-cat">  Mã sản phẩm: 113  </a>
@@ -64,7 +68,8 @@
                        <a href="" class="product-thumb">
                            <img src = "../product img/Panasonic/495l_datudong.jpg" alt = "không hiển thị hình ảnh" >
                        </a>
-                       <a href="" class="buy-now">Mua ngay</a>
+                       <span href="" class="buy-now"><button type="button" onclick="addToCart(this)" > Mua ngay  </button> </span>
+                       <div class="product-price hide"><span class="amount"> 45000000 </span> VND </div>
                    </div>
                    <div class="product-infor">
                        <a href="" class="product-cat">  Mã sản phẩm: 114  </a>
@@ -79,7 +84,8 @@
                        <a href="" class="product-thumb">
                            <img src = "../product img/Panasonic/540l.jpg" alt = "không hiển thị hình ảnh" >
                        </a>
-                       <a href="" class="buy-now">Mua ngay</a>
+                       <span href="" class="buy-now"><button type="button" onclick="addToCart(this)" > Mua ngay  </button> </span>
+                       <div class="product-price hide"><span class="amount"> 45000000 </span> VND </div>
                    </div>
                    <div class="product-infor">
                        <a href="" class="product-cat">  Mã sản phẩm: 115  </a>
@@ -94,7 +100,8 @@
                        <a href="" class="product-thumb">
                            <img src = "../product img/Panasonic/550l.jpg" alt = "không hiển thị hình ảnh" >
                        </a>
-                       <a href="" class="buy-now">Mua ngay</a>
+                       <span href="" class="buy-now"><button type="button" onclick="addToCart(this)" > Mua ngay  </button> </span>
+                       <div class="product-price hide"><span class="amount"> 45000000 </span> VND </div>
                    </div>
                    <div class="product-infor">
                        <a href="" class="product-cat">  Mã sản phẩm: 116  </a>
@@ -109,7 +116,8 @@
                        <a href="" class="product-thumb">
                            <img src = "../product img/Panasonic/550l (2).jpg" alt = "không hiển thị hình ảnh" >
                        </a>
-                       <a href="" class="buy-now">Mua ngay</a>
+                       <span href="" class="buy-now"><button type="button" onclick="addToCart(this)" > Mua ngay  </button> </span>
+                       <div class="product-price hide"><span class="amount"> 45000000 </span> VND </div>
                    </div>
                    <div class="product-infor">
                        <a href="" class="product-cat">  Mã sản phẩm: 117  </a>
@@ -124,7 +132,8 @@
                        <a href="" class="product-thumb">
                            <img src = "../product img/Panasonic/590l.jpg" alt = "không hiển thị hình ảnh" >
                        </a>
-                       <a href="" class="buy-now">Mua ngay</a>
+                       <span href="" class="buy-now"><button type="button" onclick="addToCart(this)" > Mua ngay  </button> </span>
+                       <div class="product-price hide"><span class="amount"> 45000000 </span> VND </div>
                    </div>
                    <div class="product-infor">
                        <a href="" class="product-cat">  Mã sản phẩm: 118  </a>
@@ -180,6 +189,28 @@
            </li>
        </ul>
 </div>
+    <div class="shoping-cart">
+        <div class="title"> Giỏ hàng của bạn </div>
+        <table id = "cartItems" class = "cart-Items" style="display:none">
+            <thead>
+            <tr>
+                <th> Mã </th>
+                <th> Tên sản phẩm </th>
+                <th> Giá </th>
+                <th>&nbsp;</th>
+            </tr>
+            </thead>
+            <tbody id = "cart-body">
+
+            </tbody>
+        </table>
+        <div class="headline">
+            <div id="grandTotal" class="grendTotal" style="display:none">
+                Tổng tiền:  <span id = "total"> 0 </span> VND
+            </div>
+            <div id="emptyCard" class="emptyCart"> Bạn chưa chọn mặt hàng nào </div>
+        </div>
+    </div>
 </div>
 </body>
 </html>

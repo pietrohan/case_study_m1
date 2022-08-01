@@ -19,7 +19,8 @@
                     <a href="" class="product-thumb">
                         <img src = "../product img/Sámung/tu-lanh-samsung-inverter-488l-4-cua-rf48a4000b4-sv.png" alt = "không hiển thị hình ảnh" >
                     </a>
-                    <a href="" class="buy-now">Mua ngay</a>
+                    <span href="" class="buy-now"><button type="button" onclick="addToCart(this)" > Mua ngay  </button> </span>
+                    <div class="product-price hide"><span class="amount"> 45000000 </span> VND </div>
                 </div>
                 <div class="product-infor">
                     <a href="" class="product-cat">  Mã sản phẩm: 1115345 </a>
@@ -34,7 +35,8 @@
                     <a href="" class="product-thumb">
                         <img src = "../product img/Sámung/tu-lanh-samsung-inverter-488l-4-cua-rf48a4010b4-sv.jpg" alt = "không hiển thị hình ảnh" >
                     </a>
-                    <a href="" class="buy-now">Mua ngay</a>
+                    <span href="" class="buy-now"><button type="button" onclick="addToCart(this)" > Mua ngay  </button> </span>
+                    <div class="product-price hide"><span class="amount"> 45000000 </span> VND </div>
                 </div>
                 <div class="product-infor">
                     <a href="" class="product-cat">  Mã sản phẩm: 1125345 </a>
@@ -49,7 +51,8 @@
                     <a href="" class="product-thumb">
                         <img src = "../product img/Sámung/tu-lanh-samsung-inverter-647-lit-rs62r5001m9-sv-300.jpg" alt = "không hiển thị hình ảnh" >
                     </a>
-                    <a href="" class="buy-now">Mua ngay</a>
+                    <span href="" class="buy-now"><button type="button" onclick="addToCart(this)" > Mua ngay  </button> </span>
+                    <div class="product-price hide"><span class="amount"> 45000000 </span> VND </div>
                 </div>
                 <div class="product-infor">
                     <a href="" class="product-cat">  Mã sản phẩm: 113534  </a>
@@ -64,7 +67,8 @@
                     <a href="" class="product-thumb">
                         <img src = "../product img/Sámung/tu-lanh-samsung-inverter-side-by-side-617-lit-rs64r5301b4-sv-nho.jpg" alt = "không hiển thị hình ảnh" >
                     </a>
-                    <a href="" class="buy-now">Mua ngay</a>
+                    <span href="" class="buy-now"><button type="button" onclick="addToCart(this)" > Mua ngay  </button> </span>
+                    <div class="product-price hide"><span class="amount"> 45000000 </span> VND </div>
                 </div>
                 <div class="product-infor">
                     <a href="" class="product-cat">  Mã sản phẩm: 114345  </a>
@@ -79,7 +83,8 @@
                     <a href="" class="product-thumb">
                         <img src = "../product img/Sámung/tu-lanh-samsung-rf48a4010m9-sv-22.jpg" alt = "không hiển thị hình ảnh" >
                     </a>
-                    <a href="" class="buy-now">Mua ngay</a>
+                    <span href="" class="buy-now"><button type="button" onclick="addToCart(this)" > Mua ngay  </button> </span>
+                    <div class="product-price hide"><span class="amount"> 45000000 </span> VND </div>
                 </div>
                 <div class="product-infor">
                     <a href="" class="product-cat">  Mã sản phẩm: 1145345  </a>
@@ -94,7 +99,8 @@
                     <a href="" class="product-thumb">
                         <img src = "../product img/Sámung/tu-lanh-samsung-side-by-side-inverter-595-lit-rs64t5f01b4-sv-nho.jpg" alt = "không hiển thị hình ảnh" >
                     </a>
-                    <a href="" class="buy-now">Mua ngay</a>
+                    <span href="" class="buy-now"><button type="button" onclick="addToCart(this)" > Mua ngay  </button> </span>
+                    <div class="product-price hide"><span class="amount"> 45000000 </span> VND </div>
                 </div>
                 <div class="product-infor">
                     <a href="" class="product-cat">  Mã sản phẩm: 114345  </a>
@@ -109,7 +115,8 @@
                     <a href="" class="product-thumb">
                         <img src = "../product img/Sámung/tu-lanh-side-by-side-samsung-inverter-rs62r5001b4-sv-647-lit-400.jpg" alt = "không hiển thị hình ảnh" >
                     </a>
-                    <a href="" class="buy-now">Mua ngay</a>
+                    <span href="" class="buy-now"><button type="button" onclick="addToCart(this)" > Mua ngay  </button> </span>
+                    <div class="product-price hide"><span class="amount"> 45000000 </span> VND </div>
                 </div>
                 <div class="product-infor">
                     <a href="" class="product-cat">  Mã sản phẩm: 1145345  </a>
@@ -124,7 +131,8 @@
                     <a href="" class="product-thumb">
                         <img src = "../product img/Sámung/tu-lanh-side-by-side-samsung-rs64r53012c-sv-300.jpg" alt = "không hiển thị hình ảnh" >
                     </a>
-                    <a href="" class="buy-now">Mua ngay</a>
+                    <span href="" class="buy-now"><button type="button" onclick="addToCart(this)" > Mua ngay  </button> </span>
+                    <div class="product-price hide"><span class="amount"> 45000000 </span> VND </div>
                 </div>
                 <div class="product-infor">
                     <a href="" class="product-cat">  Mã sản phẩm: 114345  </a>
@@ -135,6 +143,28 @@
         </li>
     </ul>
 </div>
+    <div class="shoping-cart">
+        <div class="title"> Giỏ hàng của bạn </div>
+        <table id = "cartItems" class = "cart-Items" style="display:none">
+            <thead>
+            <tr>
+                <th> Mã </th>
+                <th> Tên sản phẩm </th>
+                <th> Giá </th>
+                <th>&nbsp;</th>
+            </tr>
+            </thead>
+            <tbody id = "cart-body">
+
+            </tbody>
+        </table>
+        <div class="headline">
+            <div id="grandTotal" class="grendTotal" style="display:none">
+                Tổng tiền:  <span id = "total"> 0 </span> VND
+            </div>
+            <div id="emptyCard" class="emptyCart"> Bạn chưa chọn mặt hàng nào </div>
+        </div>
+    </div>
 </div>
 </body>
 </html>

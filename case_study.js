@@ -1,4 +1,5 @@
 function  addToCart(index) {
+    console.log("he")
     let trNode = index.parentElement.parentElement
 
     let trNodeClone = trNode.cloneNode(true);
@@ -36,13 +37,17 @@ function  removeCartItem(index1){
     calculateGrandTotal()
 }
 function calculateGrandTotal(){
+    console.log("tong")
     let cartItemsTable = document.getElementById("cartItems");
     let amountSpans = cartItemsTable.getElementsByClassName("amount");
 
     let total = 0;
+    console.log(amountSpans)
     for (const element of amountSpans){
+        console.log(element.innerHTML)
         total += Number(element.innerHTML);
     }
+    console.log(total)
     let totalSpan = document.getElementById("total");
     totalSpan.innerText = total;
 }
