@@ -1,0 +1,102 @@
+
+@import url('https://fonts.googleapis.com/css2?family=Open+Sans:ital,wght@0,600;1,400&display=swap');
+*{
+    padding: 0;
+    margin: 0;
+}
+body{
+    font-family: 'Open Sans', sans-serif;
+    font-size: 14px;
+    color: #111;
+    line-height: 1.15;
+}
+#product{
+    max-width: 1170px;
+    margin: 0 auto;
+}
+.headline{
+    text-align: center;
+    margin: 40px 0px;
+}
+h2{
+    font-size: 18px;
+    color: #4a9ca5;
+    padding: 10px 20px;
+    text-transform: uppercase;
+    border: 1px solid #bebebe;
+    display: inline-block;
+    color: #555;
+    font-weight: 600;
+    background-image: linear-gradient(to top, #dfe9f3 0%, #a9bd92 100%);
+}
+ul.products{
+    list-style: none;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+}
+ul.products li{
+    flex-basis: 25%;
+    padding-left: 15px;
+    padding-right: 15px;
+    box-sizing: border-box;
+    margin-bottom: 30px
+}
+ul.products li img{
+    max-width: 100%;
+    height: auto;
+    width: 300px;
+}
+ul.products li .product-top{
+    position: relative;
+    overflow: hidden;
+}
+ul.products li .product-top .product-thumb{
+    display: block;
+}
+ul.products li:hover .product-top .product-thumb img{
+    filter: opacity(80%);
+}
+ul.products li .product-top .product-thumb img{
+    display: block;
+}
+ul.products li .product-top a.buy-now{
+    text-transform: uppercase;
+    text-decoration: none;
+    text-align: center;
+    display: block;
+    background-color: #446084;
+    color: #fff;
+    padding: 10px 0px;
+    position: absolute;
+    bottom: -36px;
+    width: 100%;
+    transition: 0.25s;
+    opacity: 0.85;
+}
+ul.products li:hover a.buy-now{
+    bottom: 0px;
+
+}
+ul.products li .product-infor{
+    padding: 10px 0px;
+}
+ul.products li .product-infor a{
+    display: block;
+    text-decoration: none;
+}
+ul.products li .product-infor a.product-cat {
+    font-size: 11px;
+    text-transform: uppercase;
+    color: #56ca56;
+    padding: 3px 0px;
+}
+ul.products li .product-infor a.product-name{
+    color: #334862;
+    padding: 3px 0px;
+}
+ul.products li .product-infor .product-price{
+    color: #1e1e1e;
+    padding: 3px 0px;
+    font-weight: 600;
+}

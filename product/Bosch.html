@@ -1,0 +1,118 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+    <link rel="stylesheet" href="product.css">
+    <link rel="stylesheet" href="../case_study.css">
+    <script src="../case_study.js"></script>
+</head>
+<body>
+<div class="header">
+<div id="product">
+    <div class="headline">
+        <h2>danh mục sản phẩm Tủ lạnh Bosch </h2>
+    </div>
+    <ul class="products">
+        <li>
+            <div class="product-item">
+                <div class="product-top">
+                    <a href="" class="product-thumb">
+                        <img src = "../product img/Bosch/tu-lanh-3-canh-inverter-panasonic-nr-cy558gmvn-500.jpg" alt = "không hiển thị hình ảnh" >
+                    </a>
+                    <a href="" class="buy-now"><button type="button" onclick="addToCart(this)" >  </button> Mua ngay </a>
+                </div>
+                <div class="product-infor">
+                    <a href="" class="product-cat">  Mã sản phẩm: 111 </a>
+                    <a href="" class="product-name"> Tủ lạnh Bosch 3 cánh thế hệ mới 500l</a>
+                    <div class="product-price"> 23000000 VND </div>
+                </div>
+            </div>
+        </li>
+        <li>
+            <div class="product-item">
+                <div class="product-top">
+                    <a href="" class="product-thumb">
+                        <img src = "../product img/Bosch/tu-lanh-panasonic-inverter-494-lit-nr-cy550akvn-model-2019-nho.jpg" alt = "không hiển thị hình ảnh" >
+                    </a>
+                    <a href="" class="buy-now">Mua ngay</a>
+                </div>
+                <div class="product-infor">
+                    <a href="" class="product-cat">  Mã sản phẩm: 112 </a>
+                    <a href="" class="product-name">Tủ lạnh Bosch modem 2019 bền bỉ tiết kiệm 494l</a>
+                    <div class="product-price">35000000 VND </div>
+                </div>
+            </div>
+        </li>
+        <li>
+            <div class="product-item">
+                <div class="product-top">
+                    <a href="" class="product-thumb">
+                        <img src = "../product img/Bosch/tu-lanh-panasonic-inverter-494-lit-nr-cy550hkvn-nho.jpg" alt = "không hiển thị hình ảnh" >
+                    </a>
+                    <a href="" class="buy-now">Mua ngay</a>
+                </div>
+                <div class="product-infor">
+                    <a href="" class="product-cat">  Mã sản phẩm: 113  </a>
+                    <a href="" class="product-name">Tủ lạnh Bosch 491l vượt thời gian</a>
+                    <div class="product-price">54000000 VND </div>
+                </div>
+            </div>
+        </li>
+        <li>
+            <div class="product-item">
+                <div class="product-top">
+                    <a href="" class="product-thumb">
+                        <img src = "../product img/Bosch/tu-lanh-panasonic-inverter-589-lit-nr-f603gt-n2-nho.jpg" alt = "không hiển thị hình ảnh" >
+                    </a>
+                    <a href="" class="buy-now">Mua ngay</a>
+                </div>
+                <div class="product-infor">
+                    <a href="" class="product-cat">  Mã sản phẩm: 114  </a>
+                    <a href="" class="product-name">Tủ lạnh Bosch đựng được nhiều hơn với 589l</a>
+                    <div class="product-price">38000000 VND </div>
+                </div>
+            </div>
+        </li>
+        <li>
+            <div class="product-item">
+                <div class="product-top">
+                    <a href="" class="product-thumb">
+                        <img src = "../product img/Bosch/ty-lanh-side-by-side-bosch-HMH.KAD92SB30-pro325-7.jpg" alt = "không hiển thị hình ảnh" >
+                    </a>
+                    <a href="" class="buy-now">Mua ngay</a>
+                </div>
+                <div class="product-infor">
+                    <a href="" class="product-cat">  Mã sản phẩm: 114  </a>
+                    <a href="" class="product-name">Tủ lạnh Bosch thế hệ mới </a>
+                    <div class="product-price">38000000 VND </div>
+                </div>
+            </div>
+        </li>
+    </ul>
+</div>
+    <div class="shoping-cart">
+        <div class="title"> Giỏ hàng của bạn </div>
+        <table id = "cartItems" class = "cart-Items" style="display:none">
+            <thead>
+            <tr>
+                <th> Mã </th>
+                <th> Tên sản phẩm </th>
+                <th> Giá </th>
+                <th>&nbsp;</th>
+            </tr>
+            </thead>
+            <tbody id = "cart-body">
+
+            </tbody>
+        </table>
+        <div class="headline">
+            <div id="grandTotal" class="grendTotal" style="display:none">
+                Tổng tiền:  <span id = "total"> 0 </span> VND
+            </div>
+            <div id="emptyCard" class="emptyCart"> Bạn chưa chọn mặt hàng nào </div>
+        </div>
+    </div>
+</div>
+</body>
+</html>

@@ -1,0 +1,132 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+    <link rel="stylesheet" href="case_study.css">
+    <script src="case_study.js"></script>
+</head>
+<body>
+<div class="header">
+    <div class="container">
+        <div class="navbar">
+            <div class="logo">
+                <img src="img/MINH NGỌC.png" width="60px" alt="Minh Ngọc - điểm đến của mọi nhà ">
+            </div>
+            <nav>
+                <ul>
+                    <li><a href="http://localhost:63342/case_study1/case_study.html?_ijt=59egkj10gomgilve3vu6ku8gb4&_ij_reload=RELOAD_ON_SAVE">Trang chủ</a></li>
+                    <li><a href="http://localhost:63342/case_study1/product/Panasonic.html?_ijt=pce4fvc12cqpuvae314nfbfbc&_ij_reload=RELOAD_ON_SAVE">Panasonic</a></li>
+                    <li><a href="http://localhost:63342/case_study1/product/S%C3%81mung.html?_ijt=pce4fvc12cqpuvae314nfbfbc&_ij_reload=RELOAD_ON_SAVE"> Samsung</a></li>
+                    <li><a href="http://localhost:63342/case_study1/product/Sharp.html?_ijt=pce4fvc12cqpuvae314nfbfbc&_ij_reload=RELOAD_ON_SAVE">Sharp</a></li>
+                    <li><a href="http://localhost:63342/case_study1/product/LG.html?_ijt=pce4fvc12cqpuvae314nfbfbc&_ij_reload=RELOAD_ON_SAVE">LG</a></li>
+                    <li><a href="http://localhost:63342/case_study1/product/Hitachi.html?_ijt=pce4fvc12cqpuvae314nfbfbc&_ij_reload=RELOAD_ON_SAVE">Hitachi</a></li>
+                    <li><a href="http://localhost:63342/case_study1/product/Toshiba.html?_ijt=pce4fvc12cqpuvae314nfbfbc&_ij_reload=RELOAD_ON_SAVE">Toshiba</a></li>
+                    <li><a href="http://localhost:63342/case_study1/product/Bosch.html?_ijt=pce4fvc12cqpuvae314nfbfbc&_ij_reload=RELOAD_ON_SAVE">Bosch</a></li>
+                </ul>
+            </nav>
+            <img src="img/cart.png" width="30px" height="30px" alt="Giỏ hàng">
+        </div>
+        <div class="row">
+            <div class="col-2">
+                <h3> Hãy cùng</h3>
+                <h1>Điện lạnh<br>
+                    &emsp;&emsp; Minh Ngọc</h1>
+                <p>tận hưởng hương vị ngọt ngào <br>của cuộc sống
+                </p>
+                <a href="http://localhost:63342/case_study1/phone/phone%20numer.html?_ijt=jadfka5fin8a4ipeua22spopjg&_ij_reload=RELOAD_ON_SAVE" class="btn">liên hệ ngay &#8594;</a>
+            </div>
+            <div class="col-2">
+                <img src="img/Banner-tu-lanh-720x445.png" alt="điện lạnh Minh Ngọc">
+            </div>
+        </div>
+    </div>
+</div>
+</div>
+        <div class="title">
+            <h2> sản phẩm nổi bật</h2>
+        </div>
+
+      <table class="productlist">
+        <thead>
+        <tr>
+            <th> Mã</th>
+            <th>Tên sản phầm</th>
+            <th>Giá</th>
+            <th>&nbsp;&nbsp;</th>
+        </tr>
+        </thead>
+        <tbody>
+        <tr>
+            <td> 1 </td>
+            <td> <img src = "product img/Panasonic/nhieucanh_491l.jpg" height="200 " width="240"> <br> &emsp;&emsp;&emsp;&emsp;  Tủ lạnh Panasonic </td>
+            <td>  <span class="amount"> 50000000 </span> VND</td>
+            <td> <button type="button" onclick="addToCart(this)" >  Thêm </button> </td>
+        </tr>
+        <tr>
+            <td> 2 </td>
+            <td><img src =img/samsung.jpg height="200" width="240">  <br>   &emsp;&emsp;&emsp;&emsp;     Tủ lạnh Samsung </td>
+            <td> <span class="amount"> 45000000 </span> VND </td>
+            <td> <button type="button" onclick="addToCart(this)">  Thêm </button> </td>
+        </tr>
+        <tr>
+            <td> 3 </td>
+            <td><img src = img/sharp.jpg height="200" width="240">  <br>    &emsp;&emsp;&emsp;&emsp;    Tủ lạnh Sharp </td>
+            <td>  <span class="amount"> 70000000 </span> VND</td>
+            <td> <button type="button" onclick="addToCart(this)"> Thêm </button> </td>
+        </tr>
+        <tr>
+            <td> 4 </td>
+            <td><img src =img/lg.jpg height="200" width="240">  <br>   &emsp;&emsp;&emsp;&emsp;     Tủ lạnh LG </td>
+            <td>  <span class="amount"> 60000000 </span> VND</td>
+            <td> <button type="button" onclick="addToCart(this)"> Thêm </button> </td>
+        </tr>
+        <tr>
+            <td> 5 </td>
+            <td><img src =img/hitachi.jpg height="200" width="240">  <br>  &emsp;&emsp;&emsp;&emsp;     Tủ lạnh Hitachi </td>
+            <td>  <span class="amount"> 50000000 </span> VND</td>
+            <td> <button type="button" onclick="addToCart(this)"> Thêm</button> </td>
+        </tr>
+        <tr>
+            <td> 6 </td>
+            <td><img src =img/toshiba.jpg height="200" width="240">  <br>  &emsp;&emsp;&emsp;&emsp;     Tủ lạnh Toshiba </td>
+            <td>  <span class="amount"> 4700000 </span> VND</td>
+            <td> <button type="button" onclick="addToCart(this)"> Thêm </button> </td>
+        </tr>
+        <tr>
+            <td> 7 </td>
+            <td><img src =img/bosch.jpg height="200" width="240">  <br>  &emsp;&emsp;&emsp;&emsp;     Tủ lạnh Bosch </td>
+            <td>  <span class="amount"> 55000000 </span> VND</td>
+            <td> <button type="button" onclick="addToCart(this)"> Thêm </button> </td>
+        </tr>
+        </tbody>
+        </table>
+    </div>
+    <hr>
+    <div class="shoping-cart">
+        <div class="title"> Giỏ hàng của bạn </div>
+        <table id = "cartItems" class = "cart-Items" style="display:none">
+            <thead>
+            <tr>
+                <th> Mã </th>
+                <th> Tên sản phẩm </th>
+                <th> Giá </th>
+                <th>&nbsp;</th>
+            </tr>
+            </thead>
+            <tbody id = "cart-body">
+
+            </tbody>
+        </table>
+        <div class="headline">
+        <div id="grandTotal" class="grendTotal" style="display:none">
+            Tổng tiền:  <span id = "total"> 0 </span> VND
+        </div>
+        <div id="emptyCard" class="emptyCart"> Bạn chưa chọn mặt hàng nào </div>
+    </div>
+    </div>
+</div>
+
+
+</body>
+</html>

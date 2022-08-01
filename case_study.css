@@ -1,0 +1,138 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: 'Poppins', sans-serif;
+}
+
+.navbar {
+    display: flex;
+    align-items: center;
+    padding: 20px;
+}
+.logo img{
+    max-width: 60%;
+    padding:0px 0px;
+    width: 160px;
+    height: 120px;
+}
+
+nav {
+    flex: 1;
+    text-align: right;
+}
+nav ul {
+    display: inline-block;;
+    list-style-type: none;
+}
+nav ul li {
+    display: inline-block;
+    margin-right: 20px;
+}
+a {
+    text-decoration: none;
+    color: #a82f2f;
+}
+p {
+    color: #386785;
+}
+.container{
+    max-width: 1300px;
+    margin: auto;
+    padding-left: 25px;
+    padding-right: 25px;
+}
+.row {
+    display: flex;
+    align-items: center;
+    flex-wrap: wrap;
+    justify-content: space-around;
+}
+.col-2 {
+    flex-basis: 50%;
+    min-width: 300px;
+}
+.col-2 img {
+    max-width: 100%;
+    padding:0px 0px;
+    width: 500px;
+    height: 400px;
+
+}
+.col-2 h1{
+    font-size: 50px;
+    line-height: 60px;
+    margin: 25px 0;
+}
+.btn{
+    display: inline-block;
+    background-image: linear-gradient(to right, #729493 0%, #9eaeb4 31%, #84b2ae 100%);
+    color: #c23f3f;
+    padding: 8px 30px;
+    margin: 30px 0;
+    border-radius: 30px;
+    transition: background 0.5s;
+}
+.btn:hover {
+    background-image: linear-gradient(to top, #c6d2d9 0%, #d2dee0 100%);
+}
+.header{
+    background-image: linear-gradient(to top, #dfe9f3 0%, #a9bd92 100%);
+}
+.header .row {
+    margin-top: 70px;
+}
+
+h3 {
+    color: #555;
+    font-weight: normal;
+}
+.container {
+    /*background-color: crimson;*/
+}
+.productlist{
+    background-image: linear-gradient(to top, #5aa897 0%, #88ada6, #d5e7e7 100%);
+}
+.title{
+    background-image: linear-gradient(to top, #e7d8b2 0%, #d3d3b7, #d5e7e7 100%);
+    text-align: center;
+
+}
+h2{
+    font-size: 18px;
+    color: #4a9ca5;
+    padding: 10px 20px;
+    text-transform: uppercase;
+    border: 1px solid #bebebe;
+    display: inline-block;
+    color: #555;
+    font-weight: 600;
+    background-image: linear-gradient(to top, #dfe9f3 0%, #7c9362 100%);
+}
+table,td,th{
+    border: 1px solid rgb(108, 169, 175);
+    border-collapse: collapse;
+}
+table{ width : 100%}
+th,td {
+    padding: 5px;
+}
+th{
+    background-color: rgb(101, 187, 176);
+}
+.grendTotal{
+    font-size: 1.3em;
+    font-weight: bold;
+    text-align: right;
+    margin-top: 30px ;
+}
+.shoping-cart{
+    background-image: linear-gradient(to top, #c9a2a2 0%, #d3d3b7, #6b9a9a 100%);
+}
+.headline {
+    text-align: center;
+    margin: 40px 0px;
+}
